@@ -1,0 +1,7 @@
+REPORT ZP_ADD_NUMBERS.
+DATA:
+      A TYPE i VALUE 10,
+      B TYPE i VALUE 20,
+      C TYPE i.
+C = A + B.
+WRITE: 'SUM:',C.

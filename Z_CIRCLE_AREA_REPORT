@@ -1,0 +1,18 @@
+REPORT Z_CIRCLE_AREA_REPORT.
+
+CONSTANTS c_pi TYPE f VALUE '3.14'.
+
+PARAMETERS:
+  p_radius TYPE i.
+
+DATA:
+  lv_area TYPE f.
+
+START-OF-SELECTION.
+
+IF p_radius GT 0.
+  lv_area = c_pi * p_radius * p_radius.
+  WRITE: / 'AREA OF CIRCLE:', lv_area.
+ELSE.
+  WRITE: / 'DATA IS NOT CORRECT'.
+ENDIF.

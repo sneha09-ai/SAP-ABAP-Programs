@@ -1,0 +1,11 @@
+FUNCTION Z_SNEHA_SH_CALBONUS.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     REFERENCE(EMPLOYEE_SALARY) TYPE  INT4
+*"     REFERENCE(BONUS_PERCENTAGE) TYPE  INT4
+*"  EXPORTING
+*"     REFERENCE(BONUS_AMOUNT) TYPE  INT4
+*"----------------------------------------------------------------------
+BONUS_AMOUNT = EMPLOYEE_SALARY * BONUS_PERCENTAGE / 100 .
+ENDFUNCTION.
